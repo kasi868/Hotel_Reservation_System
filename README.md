@@ -1,6 +1,6 @@
 # Hotel_Reservation_System
 
-![JavaScript Hotel_Reservation_System](Hotel-reservation-system.gif)
+![JavaScript Hotel_Reservation_System](hotel-reservation-system.gif)
 
 ### Description
 
