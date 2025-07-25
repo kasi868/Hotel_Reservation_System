@@ -22,7 +22,7 @@ The system aims to minimize travel time between booked rooms by selecting optima
 - **Live Stats**: Displays available and occupied room counts in real-time.
 - **Responsive Design**: Fully responsive UI for desktop and mobile screens.
 
-  ### JavaScript Techniques
+### JavaScript Techniques
 
 - **Classes**: HotelReservationSystem is a class encapsulating the entire system.
 - **DOM Manipulation**: Uses document.createElement, addEventListener, and innerHTML to build the UI dynamically.
@@ -34,7 +34,7 @@ The system aims to minimize travel time between booked rooms by selecting optima
 - **Sorting and Filtering**:	Filters and sorts rooms by floor and position during booking logic.
 - **Input Validation**:	Ensures booking only happens for room counts between 1 and 5.
 
-  ### JavaScript functionality:
+### JavaScript functionality:
 
 - **initializeRooms()**:
 - **Description**:
