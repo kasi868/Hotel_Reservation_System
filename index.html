@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏨 Hotel Room Reservation System</h1>
+            <p>97 rooms across 10 floors - Optimal booking based on travel time</p>
+        </header>
+
+        <div class="controls">
+            <div class="booking-section">
+                <h3>Book Rooms</h3>
+                <div class="input-group">
+                    <label for="roomCount">Number of rooms (1-5):</label>
+                    <input type="number" id="roomCount" min="1" max="5" value="1">
+                    <button id="bookRooms" class="btn btn-primary">Book Rooms</button>
+                </div>
+                <div id="bookingResult" class="booking-result"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="generateRandom" class="btn btn-secondary">Generate Random Occupancy</button>
+                <button id="resetBooking" class="btn btn-danger">Reset All Bookings</button>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Available Rooms:</span>
+                    <span id="availableCount" class="stat-value">97</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Occupied Rooms:</span>
+                    <span id="occupiedCount" class="stat-value">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel-visualization">
+            <div class="building">
+                <div class="stairs-lift">
+                    <div class="stairs">🚶</div>
+                    <div class="lift">🛗</div>
+                </div>
+                <div id="floors" class="floors"></div>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="room-sample available"></div>
+                <span>Available</span>
+            </div>
+            <div class="legend-item">
+                <div class="room-sample occupied"></div>
+                <span>Occupied</span>
+            </div>
+            <div class="legend-item">
+                <div class="room-sample selected"></div>
+                <span>Just Booked</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
